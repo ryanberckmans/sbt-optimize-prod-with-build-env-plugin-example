@@ -3,7 +3,7 @@
 
 A working example of using a sbt [AutoPlugin](https://www.scala-sbt.org/1.x/docs/Plugins.html) ([doc](https://www.scala-sbt.org/1.x/api/sbt/AutoPlugin.html)) to provide a build environment to run the Scala compiler's optimizer only for a production build.
 
-TODO link to key source files
+See [BuildEnvPlugin.scala](https://github.com/ryanberckmans/sbt-optimize-prod-with-build-env-plugin-example/blob/master/project/BuildEnvPlugin.scala) and the [usage](https://github.com/ryanberckmans/sbt-optimize-prod-with-build-env-plugin-example/blob/master/build.sbt#L24) of `buildEnv` in build.sbt.
 
 ### Running it
 
