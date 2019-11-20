@@ -3,7 +3,7 @@
 
 A working example of using a sbt [AutoPlugin](https://www.scala-sbt.org/1.x/docs/Plugins.html) ([scaladoc](https://www.scala-sbt.org/1.x/api/sbt/AutoPlugin.html)) to provide a build environment to run the Scala compiler's optimizer only for a production build.
 
-See [BuildEnvPlugin.scala](https://github.com/ryanberckmans/sbt-optimize-prod-with-build-env-plugin-example/blob/master/project/BuildEnvPlugin.scala) and the [usage](https://github.com/ryanberckmans/sbt-optimize-prod-with-build-env-plugin-example/blob/master/build.sbt#L24) of `buildEnv` in build.sbt.
+See [BuildEnvPlugin.scala](https://github.com/ryanberckmans/sbt-optimize-prod-with-build-env-plugin-example/blob/master/project/BuildEnvPlugin.scala) and the [usage](https://github.com/ryanberckmans/sbt-optimize-prod-with-build-env-plugin-example/blob/master/build.sbt#L23) of `buildEnv` in build.sbt.
 
 This includes a documented [example](https://github.com/ryanberckmans/sbt-optimize-prod-with-build-env-plugin-example/blob/master/build.sbt#L8) of scalac optimizer options. Anecdotally I've observed compilation taking up to 5x longer when running the optimizer, but the resulting performance speedup was significant for me.
 
