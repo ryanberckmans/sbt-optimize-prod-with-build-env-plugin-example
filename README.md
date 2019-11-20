@@ -26,3 +26,7 @@ $ sbt -Denv=production run
 ## Potential alternative to the plugin approach in this repo
 
 sbt-native-packager [suggests](https://www.scala-sbt.org/sbt-native-packager/recipes/package_configuration.html#sbt-sub-modules) using sbt submodules for staging and production builds. However in their example the staging and production builds depend on the same app build. They add configuration based on staging/production but the app build is unmodified. The example in this repo modifies the app build to include scalac optimizer options for a production build.
+
+## Troubleshooting
+
+* in my personal use of this plugin I found it necessary to include `scalaVersion := "2.12.10"` in my `project/plugins.sbt` so that the build of BuildEnvPlugin.scala was compatible with other plugins used via `addSbtPlugin(...)` in `project/plugins.sbt`.
