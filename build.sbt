@@ -10,7 +10,6 @@ lazy val scalacOptionsForOptimizer = Seq(
   "-Xmaxerrs", "1000", // the optimizer can sometimes print large numbers of errors and we'd like to see all of them
   "-Xmaxwarns", "1000", // the optimizer can sometimes print large numbers of warnings and we'd like to see all of them
   "-opt:-l:none,_", // enable all optimizations; the "_" means all optimizations; the first "-l:none" is a workaround for "_" turning on the "none" flag and in fact disabling all optimizations https://github.com/scala/bug/issues/11746
-  // "-opt-inline-from:noricmud.**", // enable inlining for classes in noricmud package and subpackages
   "-opt-inline-from:**",
   // "-opt-warnings:-none,_", // enable optimizer warnings; the "_" means all warnings; the first "-none" is a workaround for "_" turning on the "none" flag and in fact disabling all warnings; currently the "warnings" emitted by this flag seem to be compile errors that fail the build https://github.com/scala/bug/issues/11746
   // "-Vopt", "_", // trace the optimizer progress for methods; `_` to print all, prefix match to select. -Vopt replaced -Yopt-trace
