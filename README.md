@@ -7,7 +7,7 @@ This repo is [based on](https://www.scala-sbt.org/sbt-native-packager/recipes/pa
 
 See [BuildEnvPlugin.scala](https://github.com/ryanberckmans/sbt-optimize-prod-with-build-env-plugin-example/blob/master/project/BuildEnvPlugin.scala) and the [usage](https://github.com/ryanberckmans/sbt-optimize-prod-with-build-env-plugin-example/blob/master/build.sbt#L23) of `buildEnv` in build.sbt.
 
-This includes a documented [example](https://github.com/ryanberckmans/sbt-optimize-prod-with-build-env-plugin-example/blob/master/build.sbt#L8) of scalac optimizer options. Anecdotally I've observed compilation taking up to 5x longer when running the optimizer, but the resulting performance speedup was significant for me.
+This repo includes a documented [example](https://github.com/ryanberckmans/sbt-optimize-prod-with-build-env-plugin-example/blob/master/build.sbt#L8) of scalac optimizer options. Anecdotally I've observed compilation taking up to 5x longer when running the optimizer, but the resulting performance speedup was significant for me.
 
 ### Running it
 
